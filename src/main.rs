@@ -86,7 +86,7 @@ fn main() {
         Ok(val) => val,
         Err(_) => "".to_string(),
     }
-    .contains("nixpkgs");
+    .contains("nixpkgs=");
 
     if args.install {
         Command::new("nix-env")
